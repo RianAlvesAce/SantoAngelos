@@ -6,6 +6,7 @@ import vid3 from "../assets/testemunhos/vid3.mp4"
 import Title from "../components/Title"
 import { useLocation } from "react-router-dom"
 import { ActualRouteContext } from "../context/ActualPageContext"
+import Header from "../components/Header"
 
 const About = () => {
 
@@ -23,6 +24,8 @@ const About = () => {
 
   return (
     <>
+
+      <Header />
 
       <div className="min-h-screen flex flex-col py-20 pb-40 justify-center items-center px-10 text-sm gap-20">
 

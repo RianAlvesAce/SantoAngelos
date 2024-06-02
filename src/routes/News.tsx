@@ -4,6 +4,7 @@ import verifyData from "../utils/verifyData"
 import "./News.css"
 import { useLocation } from "react-router-dom"
 import { ActualRouteContext } from "../context/ActualPageContext"
+import Header from "../components/Header"
 
 const News = () => {
 
@@ -22,6 +23,8 @@ const News = () => {
 
   return (
     <>
+
+      <Header />
 
       <div className="min-h-screen flex flex-col items-center py-10">
 

@@ -2,6 +2,7 @@ import { FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { useContext, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { ActualRouteContext } from "../context/ActualPageContext";
+import Header from "../components/Header";
 
 const Contact = () => {
 
@@ -13,6 +14,9 @@ const Contact = () => {
 
   return (
     <>
+
+      <Header />
+
       <div className="min-h-screen flex justify-center items-center">
 
         <div className="flex w-2/3 justify-around">

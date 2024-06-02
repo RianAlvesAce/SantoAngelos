@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import Title from "../components/Title"
 import { useParams } from "react-router-dom"
+import Header from "../components/Header"
 
 const Project = () => {
   
@@ -16,6 +17,9 @@ const Project = () => {
 
   return (
     <>
+
+      <Header />
+
       <div className="min-h-screen flex flex-col items-center justify-center gap-14 py-20">
 
         <Title title={info.name} />

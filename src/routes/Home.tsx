@@ -8,9 +8,11 @@ import { IoIosArrowForward } from "react-icons/io";
 import Title from "../components/Title";
 
 import "./Home.css"
-import verifyData from "../utils/verifyData";
+// import verifyData from "../utils/verifyData";
 import { Link, useLocation } from "react-router-dom";
 import { ActualRouteContext } from "../context/ActualPageContext";
+import Header from "../components/Header";
+import verifyData from "../utils/verifyData";
 
 const Home = () => {
 
@@ -92,6 +94,7 @@ const Home = () => {
 
   return (
     <>
+      <Header />
       <div className="flex h-screen -z-10 shadow-xl shadow-shadow-semi-black">
 
         <div className="w-1/2 h-full bg-bg1 bg-fixed relative">
