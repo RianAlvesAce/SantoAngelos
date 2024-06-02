@@ -5,6 +5,7 @@ import "./News.css"
 import { useLocation } from "react-router-dom"
 import { ActualRouteContext } from "../context/ActualPageContext"
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 const News = () => {
 
@@ -41,6 +42,8 @@ const News = () => {
         ))}
 
       </div>
+
+      <Footer />
 
     </>
   )

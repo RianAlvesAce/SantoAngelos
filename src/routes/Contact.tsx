@@ -3,6 +3,7 @@ import { useContext, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { ActualRouteContext } from "../context/ActualPageContext";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const Contact = () => {
 
@@ -44,6 +45,8 @@ const Contact = () => {
         </div>
 
       </div>
+
+      <Footer />
     </>
   )
 }

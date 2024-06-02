@@ -13,6 +13,7 @@ import { Link, useLocation } from "react-router-dom";
 import { ActualRouteContext } from "../context/ActualPageContext";
 import Header from "../components/Header";
 import verifyData from "../utils/verifyData";
+import Footer from "../components/Footer";
 
 const Home = () => {
 
@@ -225,6 +226,7 @@ const Home = () => {
 
       </div>
 
+      <Footer />
     </>
   )
 }

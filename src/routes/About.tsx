@@ -7,6 +7,7 @@ import Title from "../components/Title"
 import { useLocation } from "react-router-dom"
 import { ActualRouteContext } from "../context/ActualPageContext"
 import Header from "../components/Header"
+import Footer from "../components/Footer"
 
 const About = () => {
 
@@ -80,6 +81,8 @@ const About = () => {
 
 
       </div>
+
+      <Footer />
 
     </>
   )
