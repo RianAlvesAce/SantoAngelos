@@ -28,11 +28,13 @@ const Home = () => {
     (async () => {
       localStorage.setItem('info', JSON.stringify(await InfoService.getAll()))
       // console.log(JSON.parse(localStorage.getItem('info') as string))
-      console.log(projetosList)
+      setProjetosList(JSON.parse(localStorage.getItem('info') as string).projects)
     })()
   }, [])
 
-  let projetosList: {id: number, name: string, imgBanner: string}[] = JSON.parse(localStorage.getItem('info') as string).projects
+  const [projetosList, setProjetosList] = useState<{id: number, name: string, imgBanner: string}[]>([])
+
+  // let projetosList: {id: number, name: string, imgBanner: string}[] = JSON.parse(localStorage.getItem('info') as string).projects
 
   const carrosselRef = useRef<HTMLDivElement>(null)
   const nextRef = useRef<HTMLDivElement>(null)
