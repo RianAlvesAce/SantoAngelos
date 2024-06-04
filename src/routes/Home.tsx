@@ -14,6 +14,7 @@ import { ActualRouteContext } from "../context/ActualPageContext";
 import Header from "../components/Header";
 import verifyData from "../utils/verifyData";
 import Footer from "../components/Footer";
+import InfoService from "../services/InfoService";
 
 const Home = () => {
 
@@ -23,10 +24,16 @@ const Home = () => {
     setActualPage(location.pathname)
   })
 
+  useEffect(() => {
+    (async () => {
+      if(!localStorage.getItem('info')) {
+        localStorage.setItem('info', JSON.stringify(await InfoService.getAll()))
+      }
+    })()
+  }, [])
+
   const projetosList: {id: number, name: string, imgBanner: string}[] = JSON.parse(localStorage.getItem('info') as string).projects
 
-  
-  
   const carrosselRef = useRef<HTMLDivElement>(null)
   const nextRef = useRef<HTMLDivElement>(null)
   const backRef = useRef<HTMLDivElement>(null)
@@ -87,10 +94,6 @@ const Home = () => {
       }
     }
   }
-
-  useEffect(() => {
-    verifyData
-  }, [])
 
 
   return (
