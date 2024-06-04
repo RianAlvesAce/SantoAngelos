@@ -8,6 +8,7 @@ const api = axios.create({
 class InfoService {
   static async getAll() {
     const {data} = await api.get('getAll')
+    // console.log(data)
     return data
   }
 }

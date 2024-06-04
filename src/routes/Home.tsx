@@ -26,15 +26,13 @@ const Home = () => {
 
   useEffect(() => {
     (async () => {
-      if(!localStorage.getItem('info')) {
-        console.log('teste')
-        localStorage.setItem('info', JSON.stringify(await InfoService.getAll()))
-      } 
-      projetosList = JSON.parse(localStorage.getItem('info') as string).projects
+      localStorage.setItem('info', JSON.stringify(await InfoService.getAll()))
+      // console.log(JSON.parse(localStorage.getItem('info') as string))
+      console.log(projetosList)
     })()
   }, [])
 
-  let projetosList: {id: number, name: string, imgBanner: string}[] = []
+  let projetosList: {id: number, name: string, imgBanner: string}[] = JSON.parse(localStorage.getItem('info') as string).projects
 
   const carrosselRef = useRef<HTMLDivElement>(null)
   const nextRef = useRef<HTMLDivElement>(null)
