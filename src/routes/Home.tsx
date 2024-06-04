@@ -12,7 +12,7 @@ import "./Home.css"
 import { Link, useLocation } from "react-router-dom";
 import { ActualRouteContext } from "../context/ActualPageContext";
 import Header from "../components/Header";
-import verifyData from "../utils/verifyData";
+// import verifyData from "../utils/verifyData";
 import Footer from "../components/Footer";
 import InfoService from "../services/InfoService";
 
