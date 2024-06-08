@@ -7,8 +7,6 @@ import { ActualRouteContext } from "../context/ActualPageContext"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
-import teste from "../assets/images/projeto1.jpg"
-
 const News = () => {
 
   const {setActualPage} = useContext(ActualRouteContext)
