@@ -1,0 +1,9 @@
+.open {
+  top: 100%;
+  transition: top .5s;
+  }
+  
+  .close {
+    top: -1000px;
+    transition: top .5s;
+}

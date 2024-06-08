@@ -8,7 +8,6 @@ function App() {
 
   return (
     <div className='h-screen'>
-      <p>cu</p>
       <ActualRouteProvider>
         <Header />
         <Outlet />

@@ -25,9 +25,9 @@ const Project = () => {
 
         <Title title={info.name} />
 
-        <p className="w-1/2 text-center">{info.desc}</p>
+        <p className="lg:w-1/2 w-4/5 text-center">{info.desc}</p>
 
-        <div className="w-1/4 rounded-full overflow-hidden shadow-xl">
+        <div className="lg:w-1/4 w-4/5 rounded-full overflow-hidden shadow-xl">
           <img src={`${import.meta.env.VITE_REACT_APP_API_URL}imgs/${info.imgBanner}`} alt="" />
         </div>
 

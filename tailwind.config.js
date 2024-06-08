@@ -19,6 +19,9 @@ export default {
       },
       boxShadow: {
         "teste": "1px 1px 10px 0"
+      },
+      spacing: {
+        "10por": "10%"
       }
     },
   },
