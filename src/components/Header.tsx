@@ -54,7 +54,7 @@ const Header = () => {
       </div>
 
 
-      <div className="flex w-full items-center justify-center p-10 relative shadow-xl shadow-shadow-semi-black z-10 bg-white z-50">
+      <div className="flex w-full items-center justify-center p-10 relative shadow-xl shadow-shadow-semi-black bg-white z-50">
 
         <div className="absolute left-6">
           <img src={logo} alt="logo da casa de missão" />
