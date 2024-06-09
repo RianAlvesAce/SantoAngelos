@@ -59,12 +59,12 @@ const Home = () => {
   }
 
   const handleVideoMobile = () => {
-    if(videoRef.current) {
-      if(videoRef.current.paused) {
-        videoRef.current.play()
+    if(videoMobileRef.current) {
+      if(videoMobileRef.current.paused) {
+        videoMobileRef.current.play()
         setIsPlay(true)
       } else {
-        videoRef.current.pause()
+        videoMobileRef.current.pause()
         setIsPlay(false)
       }
     }
